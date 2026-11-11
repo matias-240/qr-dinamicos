@@ -1,0 +1,10 @@
+{
+  "base_url": "https://matias-240.github.io/qr-dinamicos",
+  "links": [
+    {
+      "slug": "falabella-cl",
+      "nombre": "Falabella Chile",
+      "destino": "https://www.falabella.com/falabella-cl"
+    }
+  ]
+}
