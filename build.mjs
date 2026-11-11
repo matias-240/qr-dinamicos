@@ -46,8 +46,8 @@ for (const item of config.links) {
 `
   );
 
-  await QRCode.toFile(`qr/${item.slug}.png`, shortUrl, { width: 1024, margin: 4, errorCorrectionLevel: "M" });
-  await writeFile(`qr/${item.slug}.svg`, await QRCode.toString(shortUrl, { type: "svg", margin: 4, errorCorrectionLevel: "M" }));
+  await QRCode.toFile(`qr/${item.slug}.png`, item.destino, { width: 1024, margin: 4, errorCorrectionLevel: "M" });
+  await writeFile(`qr/${item.slug}.svg`, await QRCode.toString(item.destino, { type: "svg", margin: 4, errorCorrectionLevel: "M" }));
 
   cards.push(`<section>
 <h2>${esc(item.nombre)}</h2>
